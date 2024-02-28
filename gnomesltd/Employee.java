@@ -1,3 +1,7 @@
+// Author: Angus Friel
+// Email: sba22066@student.cct.ie
+// Student Number: sba22066
+
 package gnomesltd;
 
 public class Employee {

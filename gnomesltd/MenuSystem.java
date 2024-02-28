@@ -1,3 +1,7 @@
+// Author: Angus Friel
+// Email: sba22066@student.cct.ie
+// Student Number: sba22066
+
 package gnomesltd;
 
 import java.util.Scanner;
@@ -14,6 +18,8 @@ public class MenuSystem {
         this.manager = manager;
         this.scanner = new Scanner(System.in);
     }
+
+    // LINK TO GITHUB REPO: https://github.com/Ajfriel86/CA2---Java
 
     // The main method to run the menu system
     public static void main(String[] args) {
