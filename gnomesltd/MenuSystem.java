@@ -115,11 +115,24 @@ public class MenuSystem {
     private void addNewStaff() {
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
-        System.out.print("Enter email: ");
-        String email = scanner.nextLine();
+    
+        String email = "";
+        while (true) {
+            System.out.print("Enter email (must be more than 3 characters and not blank): ");
+            email = scanner.nextLine();
+            // Check that the email is not blank and its length is greater than 3 characters
+            if (email != null && !email.trim().isEmpty() && email.length() > 3) {
+                break;
+            } else {
+                System.out.println("Invalid email. Please enter a valid email.");
+            }
+        }
+    
+        // Once a valid email is provided, create and add the new employee
         Employee newEmployee = new Employee(name, email);
         company.addNewStaff(newEmployee);
-    }
+        System.out.println("Employee added successfully.");
+    }    
 
     // Method to list all current staff and remove a selected one
     private void listAndRemoveStaff() {
