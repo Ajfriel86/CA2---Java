@@ -17,6 +17,12 @@ public class MenuSystem {
         this.company = company;
         this.manager = manager;
         this.scanner = new Scanner(System.in);
+    
+        // Initialize company with employees from EmployeeTest
+        Employee[] initialEmployees = EmployeeTest.getInitialEmployees();
+        for (Employee emp : initialEmployees) {
+            this.company.addNewStaff(emp);
+        }
     }
 
     // LINK TO GITHUB REPO: https://github.com/Ajfriel86/CA2---Java
